@@ -13,6 +13,7 @@ public class Main {
         // TODO - Use different comparators here
         CompoundComparator comparator = new CompoundComparator();
         comparator.add(new StateComparator());
+        comparator.add(new PopulationComparator());
         comparator.add(new AreaComparator());
         cities.sort(comparator);
 
